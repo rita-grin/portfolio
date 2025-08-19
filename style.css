@@ -370,6 +370,18 @@ footer {
     align-items: center;
   }
 
+  #projectContainer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 400px;
+  }
+
   .nav-links {
     flex-direction: column;
     gap: 1rem;
