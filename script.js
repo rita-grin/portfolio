@@ -164,3 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
   renderProjects();
 });
+
+document.getElementById('burger').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('show');
+});
