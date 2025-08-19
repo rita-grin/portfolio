@@ -439,4 +439,21 @@ footer {
     padding: 0.7rem 1.2rem;
     font-size: 0.95rem;
   }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 0.5rem !important; 
+    padding: 0 1rem;
+  }
+  
+  .contact-container p {
+    margin: 0.2rem 0; 
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  #contact {
+    padding: 1.5rem 1rem;
+  }
 }
