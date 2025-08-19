@@ -367,20 +367,15 @@ footer {
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
 @media (max-width: 768px) {
   .project-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #projectContainer {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .project-card {
-    margin: 1rem auto;
     width: 90%;
     max-width: 400px;
+    margin: 1rem auto;
   }
 
   .nav-links {
@@ -393,5 +388,4 @@ footer {
     max-width: 300px;
     padding: 1rem;
   }
-
 }
