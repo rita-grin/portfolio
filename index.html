@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Margarita Grishechkina | Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" id="logo" alt="logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello! I'm Margarita Grishechkina</h1>
+    <p>Data Scientist | Researcher | Analyst</p>
+    <p id="about">Emerging and motivated data researcher and analyst, with strong technical and statistical skills. Transitioned into data science after an established career in project coordination. Known for a tenacious problem-solving mindset, high adaptability to new tools and environments, and a consistent ability to turn complex, messy data into clear, actionable insights. Ready to bring 2+ years of hands-on analytical experience and 10+ years of leadership and collaboration skills to a new challenge.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="r">R</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="app">Apps</button>
+    </div>
+
+    <div class="project-grid" id="projectContainer">
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/fatalities-chart.png" alt="Fatal Crashes Chart">
+        <h3>Crash Risk Modelling (Statistics)</h3>
+        <p>
+          Extended analysis using NZTA datasets to explore road-type similarity, traffic volume, and speed-related crash causes. Involved performing data wrangling, and applying statistical models to identify key risk factors for vulnerable road users.
+        </p>
+        <div>
+          <span class="tag active-project">In Progress</span>
+        </div>
+        <span class="tag tag-source">University of Canterbury</span>
+        <div class="skills">
+          <span class="tag">R</span>
+          <span class="tag">Regression</span>
+          <span class="tag">Modelling</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/road-safety.png" alt="Spatial Speed Limit Analysis">
+        <h3>Speed regulations and road safety analysis (Spatial)</h3>
+        <p>
+          Capstone project applying spatial-temporal analysis to assess the impact of speed limit changes on overall crash occurrence and injury severity. The project was developed as part of an academic collaboration between the University of Canterbury and law enforcement.
+        </p>
+        <span class="tag tag-results">
+          <a href="assets/docs/capstone-crashes-speed-limits.pdf" class="btn-download" target="_blank">
+          📊 View Presentation
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">University of Canterbury</span>
+          <span class="tag tag-source">NZ Police</span>
+        </div>
+        <div class="skills">
+          <span class="tag">R</span>
+          <span class="tag">GIS</span>
+          <span class="tag">Shiny</span>
+          <span class="tag">App</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/teaching.png" alt="Teaching Python, R, SQL">
+        <h3>Teaching Python, R & SQL (Mentorship)</h3>
+        <p>
+          Volunteer initiative to teach foundational and intermediate data skills to adult Russian-speaking learners. Designed and delivered interactive online classes covering coding, data wrangling, and database queries using practical, project-based approach.
+        </p>
+        <div>
+          <span class="tag active-project">In Progress</span>
+        </div>
+        <span class="tag tag-source">Teaching</span>
+        <span class="tag tag-source">Community Project</span>
+        <div class="skills">
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/lottery_tick.png" alt="Lottery Ticket Hypothesis DL">
+        <h3>Lottery Ticket Hypothesis (DL Reproduction)</h3>
+        <p>
+          Course project investigating neural network pruning through reproduction of the Lottery Ticket Hypothesis (Frankle & Carbin, 2019). Included replication of test accuracy trends, critical analysis, and structured reporting of limitations and future work.
+        </p>
+        <span class="tag tag-results">
+          <a href="assets/docs/report_win_ticket.pdf" class="btn-download" target="_blank">
+          📄 View Report
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">University coursework</span>
+        </div>
+        <span class="tag">Python</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">PyTorch</span>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/healthcare.png" alt="Healthcare Modeling">
+        <h3>Predictive modeling in healthcare (Statistics)</h3>
+        <p>Coursework project applying advanced preprocessing, regression modeling, and ensemble learning techniques on biomedical data. Developed multiple models (Elastic Net, XGBoost, SVM, etc.), implemented extensive tuning strategies, and deployed a Shiny app.</p>
+        <span class="tag tag-results">
+          <a href="assets/docs/report_win_ticket.pdf" class="btn-download" target="_blank">
+          📄 View Report
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">University coursework</span>
+        </div>
+        <span class="tag">R</span>
+        <span class="tag">Modelling</span>
+        <span class="tag">Shiny</span>
+        <span class="tag">App</span>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/neural-network.png" alt="Neural Networks Overview">
+        <h3>Introduction to Neural Networks (In Russian)</h3>
+        <p>
+          Educational presentation for Russian-speaking learners exploring the evolution of neural networks from foundational concepts to advanced architectures, along with covering training algorithms, evaluation methods, and real-world AI applications.
+        </p>
+        <span class="tag tag-results">
+          <a href="assets/docs/neural-network.pdf" class="btn-download" target="_blank">
+          📊 View Presentation
+          </a>
+        </span>
+          <div>
+          <span class="tag tag-source">Teaching</span>
+        </div>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Multilingual</span>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2025
+        </p>
+        <img src="assets/images/pyspark.png" alt="Music Recommender System">
+        <h3>Music Recommendation System (PySpark)</h3>
+        <p>Developed a scalable song recommender using collaborative filtering on the Million Song Dataset (48M+ records). Explored data structure, applied ALS model, and validated via ranking metrics. Addressed cold-start, sparsity, and real-world deployment strategies.</p>
+        <span class="tag tag-results">
+          <a href="assets/docs/report-scalable-data.pdf" class="btn-download" target="_blank">
+          📄 View Report
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">University coursework</span>
+        </div>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Big Data</span>
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+      </div>
+
+      <div class="project-card">
+        <p class="year">
+          2024
+        </p>
+        <img src="assets/images/refund.png" alt="Text Refund Analysis">
+        <h3>Consumer Refund Analysis (Text Analysis)</h3>
+        <p>
+          Applied text analysis using AntConc and Python to identify inconsistencies in seller communications and return policies. Highlighted contradictions between claims and written responses, resulting in two successful refund resolutions. Demonstrated practical NLP skills in dispute cases.
+        </p>
+        <span class="tag confidential">
+          Outcomes are confidential
+        </span>
+        <div class="project-card-footer">
+          <span class="tag tag-source">Community Project</span>        
+        </div>
+        <span class="tag">Python</span>
+        <span class="tag">AntConc</span>
+        <span class="tag">NLP</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2023
+        </p>
+        <img src="assets/images/afnz-conference.png" alt="Conference Management">
+        <h3>Conference Data Management (SQL)</h3>
+        <p>Developed a database solution for the Amputees Federation of New Zealand through discovery, evaluation, and implementation phases. Created a normalized SQL Server database and built Power BI interactive reports to support data-driven decision-making for events.</p>
+        <span class="tag tag-results">
+          <a href="assets/posters/workflow.jpg" target="_blank">
+            🖼️ Workflow Diagram
+          </a>
+        </span>
+        <span class="tag tag-results">
+          <a href="assets/docs/afnz-project-reflection.pdf" target="_blank">
+            📄 View Report
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">Ara, Institute of Canterbury</span>
+          <span class="tag tag-source">AFNZ</span>
+        </div>
+        <span class="tag">SQL</span>
+        <span class="tag">Visio</span>
+        <span class="tag">Agile</span>
+        <span class="tag">MoSCoW</span>
+        <span class="tag">Power BI</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2024
+        </p>
+        <img src="assets/images/roadwork.png" alt="CBD Activity Analysis">
+        <h3>CBD Activity Analysis (Data wrangling)</h3>
+        <p>Analysed whether scheduling city roadworks during school holidays could optimise planning by reducing Health & Safety risks, lowering traffic management costs in high-traffic areas, and minimising disruption to local businesses and the public, using data-driven insights.</p>
+        <span class="tag tag-results">
+          <a href="assets/docs/stakeholder-report.pdf" class="btn-download" target="_blank">
+          📄 View Report
+          </a>
+        </span>
+        <span class="tag tag-results">
+          <a href="assets/docs/methods-statement.pdf" class="btn-download" target="_blank">
+          📄 View Methods
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">University course group project</span>
+        </div>
+        <span class="tag">R</span>
+        <span class="tag">Modelling</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">Trello</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2023
+        </p>
+        <img src="assets/images/ecommerce.png" alt="E-commerce">
+        <h3>Agora e-commerce portal (PHP)</h3>
+        <p>Developed a multi-role e-commerce platform using server-side programming - PHP, implementing CRUD operations, user authentication, and advanced SQL queries. Integrated SOLID principles and security best practices, and presented results via a structured PowerPoint presentation.</p>
+        <span class="tag tag-results">
+          <a href="assets/docs/agora-presentation.pdf" target="_blank">
+            🖼️ View Presentation
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">Institute coursework</span>
+        </div>
+        <span class="tag">PHP</span>
+        <span class="tag">SQL</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">App</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2023
+        </p>
+        <img src="assets/images/taonga-app.png" alt="Taonga App">
+        <h3>Taonga Māori o Ara (Mobile app)</h3>
+        <p>A mobile app prototype designed for Android smartphones and built with MIT App Inventor to promote a guided tour of Māori artworks across Ara Madras City Campus. Designed with a gamified, user-friendly interface, integrated Firebase data storage, and interactive navigation features.</p>
+        <span class="tag tag-results">
+          <a href="assets/posters/taonga-app-poster.jpg" target="_blank">
+            🖼️ View Poster
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">Institute coursework</span>
+        </div>
+        <span class="tag">MIT App Inventor</span>
+        <span class="tag">UI/UX</span>
+        <span class="tag">App</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2023
+        </p>
+        <img src="assets/images/bookstore.png" alt="Bookstore Design Poster">
+        <h3>Bookstore Website (Web-development)</h3>
+        <p>Designed and built a multi-page antique bookshop site to explore early web technologies.
+          The project focused on applying HTML, CSS, and basic JavaScript to create an interactive browsing experience while ensuring accessibility and cross-device compatibility.
+        </p>
+        <span class="tag tag-results">
+          <a href="assets/posters/bookstore.jpg" target="_blank">
+            🖼️ View Poster
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">Institute coursework</span>
+        </div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Web</span>
+        <span class="tag">App</span>
+      </div>
+
+      <div class="project-card">
+         <p class="year">
+          2022
+        </p>
+        <img src="assets/images/winery.png" alt="Bookstore Design Poster">
+        <h3>Winery Website (Web-development)</h3>
+        <p>Designed and built a multi-page antique bookshop site to explore early web technologies.</p>
+        <span class="tag tag-results">
+          <a href="assets/docs/winery-poster.pdf" target="_blank">
+            🖼️ View Poster
+          </a>
+        </span>
+        <div>
+          <span class="tag tag-source">Institute coursework</span>
+        </div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">App</span>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <div id="modal" class="modal">
+        <span id="modal-close">&times;</span>
+        <img id="modal-img" src="" alt="Modal Poster" />
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="edu-entry">
+      <h3>Master’s in Applied Data Science <span class="edu-inst">— University of Canterbury</span></h3>
+      <p>2024 – 2025 | With Distinction</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>Graduate Diploma in ICT <span class="edu-inst">— Ara Institute of Canterbury</span></h3>
+      <p>2022 – 2023 | Excellent Academic Performance</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>Diploma in Process Engineering <span class="edu-inst">— Institute of Design & Technology</span></h3>
+      <p>Graduated with Honours | NZQA Level 9 Equivalent</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <p><strong>Email:</strong> <a href="mailto:m.grishechkina@yahoo.com">m.grishechkina@yahoo.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/rita-grin">github.com/rita-grin</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/m-grishechkina/">linkedin.com/in/m-grishechkina/</a></p>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Margarita Grishechkina. Built with 💜 and purpose.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
