@@ -387,6 +387,7 @@ footer {
 
   .burger {
     display: block;
+    z-index: 100;
   }
 
   .nav-links {
@@ -395,16 +396,27 @@ footer {
     gap: 1rem;
     background: var(--cream);
     position: absolute;
-    top: 60px;
-    right: 2rem;
-    padding: 1rem;
+    top: 70px;
+    right: 1rem;
+    padding: 1.5rem;
     border: 1px solid var(--accent);
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     z-index: 99;
+    width: 200px;
   }
 
   .nav-links.show {
     display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(61, 64, 91, 0.1);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
   }
 
   .poster-gallery img {

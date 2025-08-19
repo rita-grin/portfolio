@@ -165,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
   renderProjects();
 });
 
+// Burger menu
 document.getElementById('burger').addEventListener('click', () => {
-  document.getElementById('navLinks').classList.toggle('show');
+  document.querySelector('.nav-links').classList.toggle('show');
 });
