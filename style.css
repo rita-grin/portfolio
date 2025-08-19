@@ -171,7 +171,7 @@ h2 {
 .tag-results{
   border-color: var(--sup-col);
   border-style: solid;
-  border-width: 0.5px;
+  border-width: 0.8px;
   background-color: white;
 }
 
@@ -183,6 +183,7 @@ h2 {
   color: var(--text);
   border-color: var(--sup-col);
   border-style: solid;
+  border-width: 0.8px;
   background-color: white;
 }
 
