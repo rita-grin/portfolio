@@ -133,6 +133,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update pagination
     renderPagination();
+
+    // Scroll to top of project section after rendering
+    window.scrollTo({
+      top: projectContainer.offsetTop - 80,
+      behavior: 'smooth'
+    });
   }
 
   // Filter button event handlers
