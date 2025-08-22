@@ -1,4 +1,4 @@
-// 🖼️ Modal Logic (unchanged)
+// Modal Logic (unchanged)
 const posters = document.querySelectorAll(".poster-item");
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
@@ -21,7 +21,7 @@ window.addEventListener("click", e => {
   }
 });
 
-// 🔍 Filter + Pagination Combined Logic
+// Filter + Pagination Combined Logic
 document.addEventListener('DOMContentLoaded', function() {
   // Constants and state
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -58,28 +58,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 250);
   });
 
-  // Improved filtering function
+  // Filtering function
   function filterCards(filter) {
-    if (filter === 'all') return allCards.slice();
+  if (filter === 'all') return allCards.slice();
 
-    return allCards.filter(card => {
-      // Get all relevant tags (excluding special classes)
-      const tags = Array.from(card.querySelectorAll('.tag:not(.tag-source):not(.tag-results):not(.confidential):not(.active-project)'))
-        .map(tag => tag.textContent.trim().toLowerCase());
-      
-      // Special handling for skills section
-      const skillsSection = card.querySelector('.skills');
-      if (skillsSection) {
-        const skillTags = Array.from(skillsSection.querySelectorAll('.tag'))
-          .map(tag => tag.textContent.trim().toLowerCase());
-        tags.push(...skillTags);
-      }
+  return allCards.filter(card => {
+    // Get ALL tags from the card (both regular and skills)
+    const allTagElements = card.querySelectorAll('.tag:not(.tag-source):not(.tag-results):not(.confidential):not(.active-project)');
+    const allTags = Array.from(allTagElements).map(tag => 
+      tag.textContent.trim().toLowerCase()
+    );
 
-      return tags.includes(filter);
-    });
-  }
+    console.log('Card:', card.querySelector('h3').textContent);
+    console.log('Tags:', allTags);
 
-  // Render pagination controls - UPDATED TO CENTER PAGINATION
+    if (filter === 'ml-dl') {
+      return allTags.includes('machine learning') || allTags.includes('deep learning');
+    }
+
+    return allTags.includes(filter);
+  });
+}
+
+  // Render pagination controls
   function renderPagination() {
     const totalPages = Math.ceil(filteredCards.length / projectsPerPage);
     pagination.innerHTML = '';
@@ -99,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const btn = document.createElement('button');
       btn.textContent = i;
       btn.className = i === currentPage ? 'active' : '';
-      btn.style.margin = '0 5px'; // Add some spacing between buttons
+      btn.style.margin = '0 5px';
       btn.addEventListener('click', () => {
         currentPage = i;
         renderProjects();
